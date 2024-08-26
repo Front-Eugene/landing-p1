@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Verifique o modelo de página de destino de cuidados de beleza grátis</title>
+</head>
+
+<body>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Roboto";
+        }
+
+        .shadow {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: #ffffff90;
+        }
+
+        body {
+            max-width: 1300px;
+            margin: 0 auto;
+            background: #fff8ed;
+            /* fefcf9 */
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+            text-transform: uppercase;
+        }
+
+        main {
+            width: 100%;
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            padding: 0 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+        }
+
+        nav ul {
+            width: 800px;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            font-size: 25px;
+            font-weight: 400;
+        }
+
+        .screen {
+            width: 100%;
+            height: calc(100vh - 100px);
+            position: relative;
+            background: url(screen.webp) center center/cover no-repeat;
+        }
+
+        .screen-wrap {
+            padding: 200px 0 0 50px;
+            position: relative;
+            z-index: 5;
+        }
+
+        .screen-wrap h1 {
+            font-size: 40px;
+        }
+
+        .screen-wrap h2 {
+            width: 50%;
+            margin-top: 20px;
+            font-size: 30px;
+            font-weight: 400;
+        }
+
+        .sec-title {
+            margin: 50px 0;
+            letter-spacing: 3px;
+            text-align: center;
+            font-size: 35px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .sec-1 {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+            height: 500px;
+            background: #fff;
+        }
+
+        .sec-1-wrap {
+            max-width: 100%;
+            height: 100%;
+            display: flex;
+        }
+
+        .sec-1-img {
+            min-width: 50%;
+            height: 100%;
+            background: url(sec-1.webp) center center/cover no-repeat;
+        }
+
+        .sec-11-img {
+            min-width: 50%;
+            height: 100%;
+            background: url(sec-1.1.webp) center center/cover no-repeat;
+        }
+
+        .sec-1-descr {
+            padding: 20px;
+        }
+
+        .sec-1-descr h2 {
+            font-size: 25px;
+            text-transform: uppercase;
+        }
+
+        .sec-1-descr h3 {
+            font-size: 20px;
+            margin: 10px 0;
+            text-transform: uppercase;
+        }
+
+        .sec-1-descr p {
+            font-size: 15px;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+        }
+
+        .sec-2-descr {
+            width: 50%;
+            margin: 100px auto;
+            position: relative;
+            z-index: 5;
+        }
+
+        .sec-2-descr h3 {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+
+        .sec-2-descr p {
+            margin-top: 50px;
+            font-size: 25px;
+        }
+
+        .controls {
+            width: 300px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .slider-btn {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            transition: .5s;
+            background: #00000098;
+        }
+
+        .box {
+            display: none;
+            width: 90%;
+            height: 300px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 40px;
+            background: #fff;
+            box-shadow: 0px 0px 10px 5px #000;
+            z-index: -1;
+            padding: 30px;
+        }
+
+        .box-active {
+            display: flex;
+            justify-content: space-between;
+            z-index: 5;
+        }
+
+        .btn-active {
+            width: 50px;
+            background: #000;
+        }
+
+        .wrapper {
+            height: 380px;
+        }
+
+        .box-img {
+            width: 300px;
+            height: 100%;
+        }
+
+        .box-descr {
+            width: 60%;
+        }
+
+        .box-descr i {
+            font-size: 20px;
+        }
+
+        .box-descr h4{
+            margin: 10px 0;
+            font-size: 30px;
+        }
+        
+        .box-descr img{
+            width: 30px;
+            margin: 10px 5px 10px 0;
+        }
+
+        .sec-3 {
+            height: auto;
+            padding-bottom: 40px;
+        }
+
+        .contact {
+            padding: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .contact img{
+            height: 100%;
+        }
+
+        .contact-descr {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .contact-descr h2{
+            text-transform: uppercase;
+            font-size: 40px;
+        }
+        
+        .contact-descr h3{
+            text-transform: uppercase;
+            font-size: 25px;
+            margin: 10px 0;
+        }
+
+        .contact-descr a{
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+
+        .contact-descr p{
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+
+        footer {
+            max-width: 1000px;
+            height: 100px;
+            margin: 0 auto;
+            padding: 0 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #fff;
+            background: #000;
+        }
+    </style>
+
+    <header>
+        <img style="width: 50px; height: 50px;" src="logo.png" alt="logo">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#id-1">
+                        Nossos Tratamentos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#id-2">
+                        Sobre nós
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#id-3">
+                        Avaliações
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#id-4">
+                        Contate-nos
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="screen">
+            <div class="shadow"></div>
+            <div class="screen-wrap">
+                <h1>Clínica de beleza - o lugar que faz você se sentir bem</h1>
+                <h2>
+                    Você pode colocar aqui um sub slogan curto, mas tentador,
+                    para convencer seus convidados a escolher sua oferta de beleza
+                </h2>
+            </div>
+        </section>
+
+        <h2 id="id-1" class="sec-title">Nossos Tratamentos</h2>
+        <section class="sec-1">
+            <div class="sec-1-wrap">
+                <div class="sec-1-img"></div>
+                <div class="sec-1-descr">
+                    <h2>Face</h2>
+                    <h3>Preenchimentos dérmicos</h3>
+                    <p>
+                        Os preenchimentos faciais dérmicos são utilizados para suavizar
+                        rugas, restaurar volume e rejuvenescer a pele facial.
+                    </p>
+
+                    <h3>Rejuvenescimento da pele a laser</h3>
+                    <p>
+                        O rejuvenescimento da pele a laser é um procedimento que utiliza feixes de luz concentrada para
+                        tratar rugas, manchas, cicatrizes e outros sinais de envelhecimento, estimulando a produção de
+                        colágeno e renovando a textura da pele.
+                    </p>
+
+                    <h3>Peelings químicos</h3>
+                    <p>
+                        Peelings químicos são procedimentos cosméticos que utilizam
+                        ácidos para melhorar a textura da pele, tratar manchas e rugas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-1">
+            <div class="sec-1-wrap">
+                <div class="sec-1-descr">
+                    <h2>Corpo</h2>
+                    <h3>Massagem</h3>
+                    <p>
+                        A massagem corporal promove relaxamento, alívio muscular e bem-estar geral.
+                    </p>
+
+                    <h3>Acupuntura</h3>
+                    <p>
+                        A acupuntura é uma prática terapêutica tradicional chinesa que envolve a
+                        inserção de agulhas em pontos específicos do corpo para promover o
+                        equilíbrio e o bem-estar.
+                    </p>
+
+                    <h3>Crioterapia</h3>
+                    <p>
+                        A crioterapia é um tratamento que envolve a aplicação
+                        de frio para reduzir a inflamação, aliviar a dor e promover a
+                        recuperação muscular.
+                    </p>
+                </div>
+                <div class="sec-11-img"></div>
+            </div>
+        </section>
+
+        <h2 id="id-2" class="sec-title">Sobre nós</h2>
+        <section class="sec-1" style="background: url(sec-2.webp) center center/cover no-repeat;">
+            <div class="shadow"></div>
+            <div class="sec-1-wrap">
+                <div class="sec-2-descr">
+                    <h3>Clínica de beleza</h3>
+                    <p>
+                        Na nossa clínica de estética, buscamos não apenas realçar sua beleza
+                        exterior, mas também nutrir a sua confiança interior.
+                        Acreditamos que a verdadeira beleza surge quando corpo
+                        e mente estão em harmonia. Aqui, você encontra um refúgio
+                        para cuidar de si mesmo de dentro para fora.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <h2 id="id-3" class="sec-title">Avaliações do cliente</h2>
+        <section class="sec-1 sec-3">
+            <div class="wrapper">
+                <div class="box box-active box-1">
+                    <div class="box-img" style="background: url(face-1.webp) center center/cover no-repeat;"></div>
+                    <div class="box-descr">
+                        <i>
+                            “Atmosfera muito agradável, instalações muito limpas! Fui recebido com muito carinho 
+                            na entrada e me sentaram em uma mesa quase imediatamente.”
+                        </i>
+                        <h4>
+                            Sofia Almeida
+                        </h4>
+                        <img src="star.png" alt="star">
+                        <img src="star.png" alt="star">
+                        <img src="star.png" alt="star">
+                        <img src="star.png" alt="star">
+                    </div>
+                </div>
+
+                <div class="box box-2">
+                    <div class="box-img" style="background: url(face-2.webp) center center/cover no-repeat;"></div>
+                    <div class="box-descr">
+                        <i>
+                            "O spa oferece um ambiente relaxante e acolhedor, com terapeutas atenciosos e 
+                            profissionais. A massagem foi incrível e me deixou revigorada."
+                        </i>
+                        <h4>
+                            Isabela Santos
+                        </h4>
+                        <img src="star.png" alt="star">
+                        <img src="star.png" alt="star">
+                        <img src="star.png" alt="star">
+                        <img src="star.png" alt="star">
+                        <img src="star.png" alt="star">
+                    </div>
+                </div>
+
+                <div class="box box-3">
+                    <div class="box-img" style="background: url(face-3.webp) center center/cover no-repeat;"></div>
+                    <div class="box-descr">
+                        <i>
+                            "Minha experiência no spa foi maravilhosa. Os tratamentos faciais 
+                            foram personalizados e o ambiente tranquilo contribuiu para uma sensação de total relaxamento."
+                        </i>
+                        <h4>
+                            Laura Pereira
+                        </h4>
+                        <img src="star.png" alt="star">
+                        <img src="star.png" alt="star">
+                        <img src="star.png" alt="star">
+                        <img src="star.png" alt="star">
+                        <img src="star.png" alt="star">
+                    </div>
+                </div>
+
+                <div class="box box-4">
+                    <div class="box-img" style="background: url(screen.webp) center center/cover no-repeat;"></div>
+                    <div class="box-descr">
+                        <i>
+                            "Recomendo este spa a todos que buscam um refúgio de cuidados pessoais. As 
+                            instalações são impecáveis e a equipe é altamente qualificada, proporcionando 
+                            uma experiência de bem-estar excepcional."
+                        </i>
+                        <h4>
+                            Laura Pereira
+                        </h4>
+                        <img src="star.png" alt="star">
+                        <img src="star.png" alt="star">
+                        <img src="star.png" alt="star">
+                        <img src="star.png" alt="star">
+                        <img src="star.png" alt="star">
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <div class="slider-btn btn-1 btn-active"></div>
+                <div class="slider-btn btn-2"></div>
+                <div class="slider-btn btn-3"></div>
+                <div class="slider-btn btn-4"></div>
+            </div>
+        </section>
+
+        <h2 id="id-4" class="sec-title">Contate-nos</h2>
+        <section class="sec-1 contact">
+            <img src="logo.png" alt="logo">
+            <div class="contact-descr">
+                <h2>Contato</h2>
+                <h3>Número de telefone:</h3>
+                <a href="tel:+375251234567">+375251234567</a>
+                <h3>Localização:</h3>
+                <p>
+                    1 Stanford Street,
+                    Londres, Inglaterra
+                </p>
+            </div>
+        </section>
+        
+
+    </main>
+
+    <footer>
+        <p>
+            © 2014-2024 
+        </p>
+        <p>
+            Clínica de beleza
+        </p>
+        <p>
+            1 Stanford Street, Londres, Inglaterra
+        </p>
+    </footer>
+
+    <script>
+        // Get all elements with the class "slider-btn"
+        const sliderButton = document.querySelectorAll('.slider-btn');
+
+        // Add click event listeners to each button
+        sliderButton.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove "btn-active" class from all buttons
+                sliderButton.forEach(btn => {
+                    btn.classList.remove('btn-active');
+                });
+
+                // Add "btn-active" class to the clicked button
+                button.classList.add('btn-active');
+            });
+        });
+
+        const btn1 = document.querySelector('.btn-1'),
+            btn2 = document.querySelector('.btn-2'),
+            btn3 = document.querySelector('.btn-3'),
+            btn4 = document.querySelector('.btn-4');
+
+        const box1 = document.querySelector('.box-1'),
+            box2 = document.querySelector('.box-2'),
+            box3 = document.querySelector('.box-3'),
+            box4 = document.querySelector('.box-4');
+
+        function toggleBoxActive() {
+            if (btn1.classList.contains('btn-active')) {
+                box1.classList.add('box-active');
+            } else {
+                box1.classList.remove('box-active');
+            }
+
+            if (btn2.classList.contains('btn-active')) {
+                box2.classList.add('box-active');
+            } else {
+                box2.classList.remove('box-active');
+            }
+
+            if (btn3.classList.contains('btn-active')) {
+                box3.classList.add('box-active');
+            } else {
+                box3.classList.remove('box-active');
+            }
+
+            if (btn4.classList.contains('btn-active')) {
+                box4.classList.add('box-active');
+            } else {
+                box4.classList.remove('box-active');
+            }
+        }
+
+        // Get all elements with the class "slider-btn"
+        const sliderButtons = document.querySelectorAll('.slider-btn');
+
+        // Attach click event listener to each button
+        sliderButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                toggleBoxActive();
+            });
+        });
+    </script>
+</body>
+
+</html>
