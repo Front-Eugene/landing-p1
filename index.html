@@ -59,6 +59,11 @@
             background: #fff;
         }
 
+        header img {
+            width: 50px; 
+            height: 50px;
+        }
+
         nav ul {
             width: 800px;
             list-style-type: none;
@@ -287,10 +292,99 @@
             color: #fff;
             background: #000;
         }
+
+
+        @media (max-width: 450px) {
+            header {
+                height: 50px;
+                padding: 0 10px;
+            }
+
+            header img {
+                width: 30px; 
+                height: 30px;
+            }
+
+            nav ul {
+                width: auto;
+                font-size: 12px;
+            }
+
+            nav ul li {
+                margin: 0 0 0 13px;
+            }
+
+            .screen-wrap {
+                padding: 100px 0 0 10px;
+            }
+
+            .screen-wrap h1 {
+                font-size: 25px;
+                width: 70%;
+            }
+
+            .screen-wrap h2 {
+                font-size: 20px;
+                width: 70%;
+            }
+
+            .sec-title {
+                margin: 20px 0;
+                text-align: center;
+                font-size: 20px;
+            }
+
+            .sec-1-descr h3 {
+                font-size: 15px;
+                margin: 5px 0;
+            }
+
+            .sec-1-descr p {
+                font-size: 12px;
+                margin-bottom: 10px;
+            }
+
+            .sec-2-descr {
+                width: 90%;
+                margin: 50px auto;
+            }
+
+            .box {
+                padding: 10px;
+            }
+
+            .box-img {
+                width: 200px;
+                margin-right: 20px;
+            }
+
+            .box-descr i {
+                font-size: 15px;
+            }
+
+            .contact {
+                height: auto;
+                padding: 10px;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact img {
+                width: 100px;
+                height: 100px;
+            }
+
+            footer {
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                padding: 20px 0;
+            }
+        }
     </style>
 
     <header>
-        <img style="width: 50px; height: 50px;" src="logo.png" alt="logo">
+        <img src="logo.png" alt="logo">
         <nav>
             <ul>
                 <li>
